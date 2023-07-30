@@ -25,6 +25,6 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run load benchmarks
-      run: bake benchmark_load
+      run: bundle exec bake benchmark_load
     - name: Run dump benchmarks
-      run: bake benchmark_dump
+      run: bundle exec bake benchmark_dump
